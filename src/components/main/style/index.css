@@ -1,0 +1,6 @@
+.xue-press-main {
+    width: 100%;
+    flex-grow: 1;
+    padding-top: 20px;
+    display: flex;
+}
