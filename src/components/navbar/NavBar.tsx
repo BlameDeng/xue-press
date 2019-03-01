@@ -48,6 +48,8 @@ class NavBar extends React.Component<INavBarProps> {
           title={route.content}
           itemGroup={!!route.itemGroup}
           showArrow={!!route.showArrow}
+          className={route.className}
+          style={route.className}
         >
           {route.children.map(childRoute =>
             this.renderSubMenuOrMenuItem(childRoute)
@@ -55,7 +57,15 @@ class NavBar extends React.Component<INavBarProps> {
         </SubMenu>
       )
     } else {
-      return <MenuItem key={route.path}>{route.content}</MenuItem>
+      return (
+        <MenuItem
+          key={route.path}
+          className={route.className}
+          style={route.className}
+        >
+          {route.content}
+        </MenuItem>
+      )
     }
   }
 
