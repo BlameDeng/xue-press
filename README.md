@@ -9,7 +9,7 @@
 ### 克隆项目到本地
 
 ```
-$ git clone git@github.com:BlameDeng/XuePress.git
+$ git clone git@github.com:BlameDeng/xue-press.git
 ```
 
 ### 安装依赖
