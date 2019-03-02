@@ -102,4 +102,6 @@ VuePress 的路由导航使用了 [Xue-react](https://github.com/BlameDeng/xue-r
 
 Header、Main、Footer 组件均可自定义类名及样式。
 
+### 完整效果可预览 [Xue-react文档](https://blamedeng.github.io/xue-reac)。
+
 ### 如果这个项目对你有帮助，请不要吝惜你的 Star。

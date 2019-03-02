@@ -38,10 +38,13 @@ section .text {
 }
 
 /* API 表格、Method 表格 */
-.api-table tr,
-.method-table tr {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+.api-table, .method-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
 }
+
 
 .api-table th,
 .api-table td,
@@ -55,6 +58,7 @@ section .text {
     max-width: 250px;
     text-align: center;
     padding: 15px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 .api-table th.des,
 .api-table td.des,
@@ -77,7 +81,7 @@ section .text {
 }
 
 .api-table th,
-.api-table th {
+.method-table th {
     background-color: rgba(0, 0, 0, 0.04);
     font-weight: 500;
 }
