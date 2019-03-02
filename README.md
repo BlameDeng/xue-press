@@ -37,7 +37,7 @@ $ yarn build
 
 #### 路由配置
 
-VuePress 的路由导航使用了 [Xue-react](https://github.com/BlameDeng/xue-react) 的 Menu 组件。通过修改 App 组件的 routes 状态来修改路由，其相关属性配置可参考接口及注释说明。需要注意的是，当子元素定义了 children 属性时，该元素将被渲染为 SubMenu 组件，否则将被渲染为 MenuItem 组件。
+XuePress 的路由导航使用了 [Xue-react](https://github.com/BlameDeng/xue-react) 的 Menu 组件。通过修改 App 组件的 routes 状态来修改路由，其相关属性配置可参考接口及注释说明。需要注意的是，当子元素定义了 children 属性时，该元素将被渲染为 SubMenu 组件，否则将被渲染为 MenuItem 组件。
 示例：
 
 ```javascript
@@ -100,7 +100,7 @@ VuePress 的路由导航使用了 [Xue-react](https://github.com/BlameDeng/xue-r
 
 保持 ButtonPage.tsx 中的 JSX 结构即可使用与示例一致的样式，只需要根据组件的不同而修改文本描述即可。
 
-Header、Main、Footer 组件均可自定义类名及样式。
+Header、Main、Footer 组件均可自定义类名及样式。Header、Footer 内容均可自定义。
 
 ### 完整效果可预览 [Xue-react文档](https://blamedeng.github.io/xue-reac)。
 

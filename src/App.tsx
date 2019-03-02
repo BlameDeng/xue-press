@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { HashRouter as Router, Route } from 'react-router-dom'
+import { Icon } from 'xue-react'
 
 import Header from './components/header/Header'
 import Main from './components/main/Main'
@@ -116,14 +117,49 @@ class App extends React.Component<{}, IAppState> {
       <Provider value={routes}>
         <Router>
           <div className="App">
-            <Header>自定义 Header</Header>
+            <Header>
+              <div
+                style={{
+                  height: '60px',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center'
+                }}
+              >
+                <span>Header 内容自行替换</span>
+                <div style={{ paddingRight: '20px' }}>
+                  <Icon
+                    name="github"
+                    style={{ cursor: 'pointer', marginRight: '10px' }}
+                    size={24}
+                    onClick={() =>
+                      window.open(
+                        'https://github.com/BlameDeng/xue-press',
+                        '_blank'
+                      )
+                    }
+                  />
+                  <Icon
+                    name="snow"
+                    style={{ cursor: 'pointer' }}
+                    size={24}
+                    onClick={() =>
+                      window.open(
+                        'https://github.com/BlameDeng/xue-react',
+                        '_blank'
+                      )
+                    }
+                  />
+                </div>
+              </div>
+            </Header>
             <Main>
               <Route path="/" component={NavBar} />
               <div style={{ padding: '20px', flexGrow: 1 }}>
                 {this.renderRoute(routes)}
               </div>
             </Main>
-            <Footer>自定义 Footer</Footer>
+            <Footer>Footer 内容自行替换</Footer>
           </div>
         </Router>
       </Provider>
