@@ -75,7 +75,7 @@ XuePress 的路由导航使用了 [Xue-react](https://github.com/BlameDeng/xue-r
 这个数据结构将被渲染为：
 
 ```html
-<SubMenu key="/data" title="数据" itemGroup="{true}" showArrow="{false}">
+<SubMenu key="/data" title="数据" itemGroup={true} showArrow={false}>
   <MenuItem key="/table">Table</MenuItem>
 </SubMenu>
 ```
